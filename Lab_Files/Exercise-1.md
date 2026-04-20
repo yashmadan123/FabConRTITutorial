@@ -55,7 +55,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
      * Continuous monitoring: Set up real-time anomaly detection with automated notifications.
      * Reanalysis with new data: Update your models as new data arrives to improve accuracy.
        
-      ![](media/new/2.png)
+       ![](media/new/2.png)
 
 ## Task 2: Create a Fabric Workspace
 
