@@ -1,5 +1,5 @@
-
 # Exercise 04: Building an Interactive Real-Time Dashboard with Live Data
+
 ### Estimated duration: 90 Minutes
 
 ## Overview
@@ -11,12 +11,12 @@ In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh f
 In this exercise, you will be able to complete the following tasks:
 
 - Task 1: Real-Time Dashboard. 
-- Task 2: Enable Auto-refresh to your dashboard.  
+- Task 2: Enable Auto-refresh on your dashboard.  
 - Task 3: Enable Data Activators.
 
 ## Task 1:  Real-Time Dashboard 
 
-In this section, we will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download [here](<https://github.com/microsoft/FabricRTIWorkshop/blob/main/dashboards/RTA%20dashboard/dashboard-RTA Dashboard.json>), which can be imported and configured to your KQL Database data source.
+In this task, we will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download [here](<https://github.com/microsoft/FabricRTIWorkshop/blob/main/dashboards/RTA%20dashboard/dashboard-RTA Dashboard.json>), which can be imported and configured to your KQL Database data source.
 
 ![](media/RealTimeDashboard.png)
 
@@ -56,7 +56,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
     | top 30 by date_count
     ```
 
-1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days  (1)**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button **Run  (2)**. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual  (3)**. This will open a pane at the right side of the browser.
+1. Replace the content of the textbox with the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days  (1)**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button **Run  (2)**. The query will be executed, and the results will be shown in the table at the bottom. To create a visualisation, click on the button **+ Add Visual  (3)**. This will open a pane on the right side of the browser.
 
     ![](media/new/32.png)
 
@@ -64,11 +64,11 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ![](media/new/33.png)
 
-1. Click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
+1. Click on the tab **Manage (1)** on the top left then click on the button **Parameters  (2)**.
 
     ![](media/new/34.png)
 
-1. On the Parameters window which opens on the right side, click on the **pencil** icon under **Time range**. This will enter the edit mode for this parameter.
+1. On the Parameters window, which opens on the right side, click on the **pencil** icon under **Time range**. This will enter the edit mode for this parameter.
 
     ![](media/guide-54up2.png)
 
@@ -76,7 +76,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ![](media/image_task13_step12up2.png)
 
-1. In the Parameters pane click on the button **Close**.
+1. In the Parameters pane, click on the button **Close**.
 
     ![](media/new/35.png)
 
@@ -84,7 +84,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ![](media/new/36.png)
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add Visual (2)**.
+1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add Visual (2)**.
 
     ```kusto
     //Impressions by hour
@@ -105,7 +105,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ![](media/new/E4T1S17-1802.png)
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add Visual (2)**.
+1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add Visual (2)**.
 
     ```kusto
     //Impressions by location
@@ -126,7 +126,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ![](media/new/E4T1S20-1802.png)
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add Visual (2)**.
+1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add Visual (2)**.
 
     ```kusto
     //Average Page Load time
@@ -197,7 +197,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ![](media/new/E4T1S31-1802.png)
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add visual (2)**.
+1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add visual (2)**.
 
     ```kusto
     //Avg Page Load Time Anomalies
@@ -251,7 +251,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
    >**Note:** The title can be resized on the dashboard canvas directly, rather than writing code.
 
-1. After you added all the visuals and moved them to thier appropiate places your dashboard should look similar to the below image.
+1. After you added all the visuals and moved them to their appropriate places, your dashboard should look similar to the image below.
 
     ![](media/new/E4T1S39-1802.png)
 
@@ -262,15 +262,15 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
 <validation step="02a20e12-54b5-4b37-9c8f-d4198f9f4430" />
 
-## Task 2: Enable Auto-refresh to your dashboard.
+## Task 2: Enable auto-refresh on your dashboard.
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.
 
-1. Click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)** This will open a pane on the right side of the browser.
+1. Click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)**. This will open a pane on the right side of the browser.
 
     ![](media/E4T2S1.png)
 
-1. In thr **Auto refresh** window which opens on the righ side, set it to **Enabled (1)** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
+1. In the **Auto refresh** window, which opens on the right side, set it to **Enabled (1)** and set **Default refresh rate** to **Continuous (2)**. Then click on the button **Apply (3)**.
 
     ![](media/guide-56up2.png)
 
@@ -282,7 +282,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
 In this task, you will create a Reflex Alert that will send a Teams Message when a value meets a certain threshold.
 
-1. Click on the three dots **(...) (1)** of the tile **Click by hour**. Select **Set alert (2)** from the context menu. This will open the **Add Rule** pane at the right side in the browser.
+1. Click on the three dots **(...) (1)** of the tile **Click by hour**. Select **Set alert (2)** from the context menu. This will open the **Add Rule** pane on the right side in the browser.
 
     ![](media/image_task14_step01up2.png)
 
@@ -311,7 +311,7 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     
    ![](media/new/63.png)
 
-1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
+1. The Reflex item will appear in your workspace, and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
 ## Summary
 
@@ -319,4 +319,4 @@ In this exercise, you have built a real-time dashboard in Microsoft Fabric to vi
 
 ### You have successfully completed the labs.
 
-By completing this lab **Build A Fabric Real-Time Intelligence Solution in a Day**, you establish an end-to-end real-time data analytics solution in Microsoft Fabric. Starting with creating a collaborative workspace and setting up an Eventhouse, you integrate data seamlessly using OneLake and Eventstream, simulate and process streaming data, and organize it efficiently in a Lakehouse with tables. Leveraging KQL for structured querying, you transform raw event data into actionable insights, culminating in the development of an interactive real-time dashboard and automated event driven actions through Data Activator, enabling timely and informed decision making.
+By completing this lab, **Build A Fabric Real-Time Intelligence Solution in a Day**, you establish an end-to-end real-time data analytics solution in Microsoft Fabric. Starting with creating a collaborative workspace and setting up an Eventhouse, you integrate data seamlessly using OneLake and Eventstream, simulate and process streaming data, and organize it efficiently in a Lakehouse with tables. Leveraging KQL for structured querying, you transform raw event data into actionable insights, culminating in the development of an interactive real-time dashboard and automated event-driven actions through Data Activator, enabling timely and informed decision-making.
