@@ -73,8 +73,6 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
    >**Note**: The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
 
-1. If you would like, you can enter a **Description** for the workspace. This is an optional field.
-
 1. Click on **Advanced (2)** to expand the section.
 
     ![](media/guide-20up2.png)
