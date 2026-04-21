@@ -66,19 +66,19 @@ After our lakehouse has been created, the overview page of the lakehouse will be
 
 1. Next, we have to create delta tables in our Lakehouse from the files we uploaded. 
 
-1. Hover the mouse over the **productscategory.csv** file, click on the three dots and select **Load to Tables (1)** from the context menu and in the submenu, click on **New table (2)**
+1. Hover over the productscategory.csv file. Click the **ellipsis (…) (1)**, choose **Load to Tables (2)** from the context menu, and then select **New table (3)** from the submenu.
 
-    ![](media/guide-33up2.png)
+    ![](media/20042026(3).png)
 
 1. Retain all default values and click on the button **Load**.
 
     ![](media/image_task10_step06up2.png)
 
-1. Now repeat the same steps for the file **products.csv** to create a delta table for this file as well. At the end of this step, you should have 2 delta tables in your lakehouse created from the 2 CSV files you uploaded.
+1. Repeat the same steps for the **products.csv** file to create a Delta table. By the end of this step, you should have two Delta tables in your lakehouse, created from the two uploaded CSV files.
 
 1. Your lakehouse should look like this:
 
-    ![](media/image_task10_step07up2.png)
+    ![](media/20042026(4).png)
 
 ## Task 3: Accessing Eventhouse data from the lakehouse
 
@@ -102,15 +102,13 @@ In this task, you will make the Eventhouse tables from the KQL Database availabl
 
     ![](media/image_task11_step04up2.png)
 
-1. You may return to this step to create additional shortcuts after running the **createAll.kql** database script which will create additional tables. For now, you may proceed by selecting just the **BronzeClicks** and **BronzeImpressions** tables.
-
 1. Click on the **Create** button.
 
     ![](media/E3T3S6-1802.png)
 
 1. Now you can see the shortcuts to the tables **BronzeClicks** and **BronzeImpressions** under the folder **Tables** in the lakehouse **WebSalesData_LH**.
 
-    ![](media/image_task11_step05bup2.png)
+    ![](media/20042026(5).png)
 
 ## Task 4: Build the KQL DB schema
 
@@ -158,7 +156,7 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/guide-44up5542.png)
 
-1. Copy the code below, and paste it into the Queryset and **Run** it.
+1. Remove the existing code, then copy the code below and paste it into the Queryset. After that, click **Run**.
 
     ```kusto
     .execute database script <|
